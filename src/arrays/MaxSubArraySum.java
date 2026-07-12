@@ -1,4 +1,4 @@
-package Arrays;
+package arrays;
 
 // Prefix sum Array Approch - T.Complexity = O(n^2)
 
