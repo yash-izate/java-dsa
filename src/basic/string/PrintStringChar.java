@@ -1,4 +1,4 @@
-package practice.string;
+package basic.string;
 
 public class PrintStringChar {
     public static void main(String[] args) {

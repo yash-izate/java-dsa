@@ -1,6 +1,6 @@
 package basic.string;
 
-public class CountWords {
+public class StringWordsCount {
     public static void main(String[] args) {
 
         String str = "  This   is my   country.  ";
