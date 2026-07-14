@@ -1,4 +1,4 @@
-package basic;
+package practice;
 
 public class ArraySum {
     public static void main(String[] args) {
