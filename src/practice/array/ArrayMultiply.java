@@ -1,4 +1,4 @@
-package practice;
+package practice.array;
 
 public class ArrayMultiply {
     public static void main(String[] args) {
