@@ -1,86 +1,93 @@
 package collections.list;
 
 import java.util.*;
+import java.util.ArrayList;
 
 public class ArrayListDemo {
     public static void main(String[] args) {
         // object can be made using reference of
-        ArrayList<Integer> al = new ArrayList<>();
-        List<Integer> l = new ArrayList<>();
-        Collection<Integer> c = new ArrayList<>();
+        Collection<Integer> l1 = new ArrayList<>();
+        List<Integer> l2 = new ArrayList<>();
+        ArrayList<Integer> l3 = new ArrayList<>();
 
         // ensure the capacity
-        al.ensureCapacity(100);
+        l3.ensureCapacity(100);
 
         // add elements to first list
-        al.add(10);
-        al.add(30);
-        al.add(50);
-        al.add(70);
-        al.add(90);
-        System.out.println("List 1:" + al);
+        l3.add(10);
+        l3.add(30);
+        l3.add(50);
+        l3.add(70);
+        l3.add(90);
+        System.out.println("List 1:" + l3);
 
         //remove element
-        al.remove(2);
-        al.removeFirst();
-        al.removeLast();
-        System.out.println("List 1:" + al);
+        l3.remove(2);
+        l3.removeFirst();
+        l3.removeLast();
+        System.out.println("List 1:" + l3);
 
         // add elements using loop n second list
         for (int i = 0; i < 5; i++) {
-            l.add(i * 3);
-            l.add(i * 5);
+            l2.add(i * 3);
+            l2.add(i * 5);
         }
-        System.out.println("List 2: " + l);
+        System.out.println("List 2: " + l2);
 
-        // addAll of al and l to c
-        c.addAll(al);
-        c.addAll(l);
-        System.out.println("List 3: " + c);
+        // addAll of l3 and l2 to l1
+        l1.addAll(l3);
+        l1.addAll(l2);
+        System.out.println("List 3: " + l1);
 
         // removeAll of all
-        c.removeAll(al);
-        System.out.println("List 3: " + c);
+        l1.removeAll(l3);
+        System.out.println("List 3: " + l1);
 
         // list size
-        c.size();
+        l1.size();
 
         // clear list
-        al.clear();
+        l3.clear();
         System.out.println("List 1: ");
 
         // get method
-        l.get(1);
-        System.out.println();
+        System.out.println(l2.get(1));
 
 
         // iterator
-        Iterator<Integer> iterator = c.iterator();
+        Iterator<Integer> iterator = l1.iterator();
 
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
 
         // convert to array using toArray
-        Object[] arr = c.toArray();
+        Object[] arr = l1.toArray();
         for (Object ele : arr) {
             System.out.println("Array: " + ele);
 
         }
 
         // is contained -> true or false
-        System.out.println(c);
-        System.out.println(c.contains(9));
+        System.out.println(l1);
+        System.out.println(l1.contains(9));
 
         // sorting
-        System.out.println(l);
-        Collections.sort(l);
-        System.out.println("Sort List: " + l);
+        System.out.println(l2);
+        Collections.sort(l2);
+        System.out.println("Sort List: " + l2);
 
         // isEmpty
-        System.out.println(l.isEmpty());
-        System.out.println(l);
-        System.out.println(l.indexOf(12));
+        System.out.println(l2.isEmpty());
+        System.out.println(l2);
+        System.out.println(l2.indexOf(12));
+
+        // clone list - (Note - it will only work if reference type is Arraylist only, not list or collection  )
+        l3.add(100);
+        l3.add(200);
+        l3.add(500);
+        ArrayList<Integer> newList = (ArrayList<Integer>) l3.clone();
+        System.out.println("New Cloned List: " + newList);
 
     }
 }
