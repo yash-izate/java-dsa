@@ -110,11 +110,19 @@ public class LinkedHashMapDemo {
 
         System.out.println("\nAfter putAll() : " + copy);
 
-        copy.entrySet().removeIf(entry -> entry.getKey() > 200);
+// Remove entries with key > 200 (ignore null key)
+        copy.entrySet().removeIf(entry ->
+                entry.getKey() != null && entry.getKey() > 200);
 
         System.out.println("After removeIf() : " + copy);
 
-        copy.replaceAll((key, value) -> value.toUpperCase());
+// Convert all values to uppercase
+        copy.replaceAll((key, value) -> {
+            if (value != null) {
+                return value.toUpperCase();
+            }
+            return null;
+        });
 
         System.out.println("After replaceAll() : " + copy);
 
