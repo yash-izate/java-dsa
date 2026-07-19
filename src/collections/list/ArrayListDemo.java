@@ -44,11 +44,11 @@ public class ArrayListDemo {
         System.out.println("List 3: " + l1);
 
         // list size
-        l1.size();
+        System.out.println("Size of L1: " + l1.size());
 
         // clear list
         l3.clear();
-        System.out.println("List 1: ");
+        System.out.print("List 3: ");
 
         // get method
         System.out.println(l2.get(1));
@@ -58,7 +58,7 @@ public class ArrayListDemo {
         Iterator<Integer> iterator = l1.iterator();
 
         while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+            System.out.print("L1 elements: " + iterator.next());
         }
 
         // convert to array using toArray
@@ -88,6 +88,9 @@ public class ArrayListDemo {
         l3.add(500);
         ArrayList<Integer> newList = (ArrayList<Integer>) l3.clone();
         System.out.println("New Cloned List: " + newList);
+
+        // starting min capacity of list
+        newList.ensureCapacity(500);
 
     }
 }
