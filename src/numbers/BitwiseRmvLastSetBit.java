@@ -1,8 +1,8 @@
 package numbers;
 
-public class BitwiseRmvLastBit {
+public class BitwiseRmvLastSetBit {
     public static void main(String[] args) {
-        int n = 10;
+        int n = 12;
 
         int ans = n & (n - 1);
 
