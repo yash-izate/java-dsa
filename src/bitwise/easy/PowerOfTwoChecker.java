@@ -1,4 +1,4 @@
-package bitwise;
+package bitwise.easy;
 
 public class PowerOfTwoChecker {
     public static void main(String[] args) {

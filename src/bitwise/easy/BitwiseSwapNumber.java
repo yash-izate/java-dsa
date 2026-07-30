@@ -1,4 +1,4 @@
-package bitwise;
+package bitwise.easy;
 
 // swapping without a temporary variable
 

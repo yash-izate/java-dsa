@@ -1,4 +1,4 @@
-package bitwise;
+package bitwise.easy;
 
 public class DecimalToBinary {
     public static void main(String[] args) {

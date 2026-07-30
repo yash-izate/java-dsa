@@ -1,4 +1,4 @@
-package bitwise;
+package bitwise.easy;
 
 // finding unique using xor
 // Condition applied - "Every element appears exactly twice except one element, which appears once."
