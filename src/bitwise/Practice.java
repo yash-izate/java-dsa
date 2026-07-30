@@ -66,7 +66,5 @@ public class Practice {
         // for unique two number others appears twice
         int[] num = {2, 4, 7, 3, 2, 7, 4, 5};
         uniqueTwoNumbers(num);
-
-
     }
 }
