@@ -59,7 +59,7 @@ class SmartPhone extends Mobile implements Camera, MusicPlayer, GPS {
     }
 }
 
-// -------------------- Main Class --------------------
+// -------------------- LinearSearch Class --------------------
 
 public class InterfaceDemo {
     public static void main(String[] args) {
@@ -68,7 +68,7 @@ public class InterfaceDemo {
 
         // Methods from ElectronicDevice
         phone.powerOn();
-        
+
         // Methods from Mobile
         phone.call();
 
