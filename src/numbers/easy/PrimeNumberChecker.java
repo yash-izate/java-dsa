@@ -1,4 +1,4 @@
-package numbers;
+package numbers.easy;
 
 public class PrimeNumberChecker {
     public static void main(String[] args) {

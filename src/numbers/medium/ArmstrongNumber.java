@@ -1,4 +1,4 @@
-package numbers;
+package numbers.medium;
 
 public class ArmstrongNumber {
     public static void main(String[] args) {

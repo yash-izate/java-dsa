@@ -1,4 +1,4 @@
-package numbers;
+package numbers.easy;
 
 // sum of proper divisors (1,2,3) = actual number (6)
 

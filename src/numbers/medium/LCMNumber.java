@@ -1,4 +1,4 @@
-package numbers;
+package numbers.medium;
 
 public class LCMNumber {
     public static void main(String[] args) {
