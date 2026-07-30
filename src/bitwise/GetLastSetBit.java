@@ -1,6 +1,6 @@
-package numbers;
+package bitwise;
 
-public class BitwiseGetLastSetBit {
+public class GetLastSetBit {
     public static void main(String[] args) {
 
         // 10 = 1010 -> 10 (1) 0

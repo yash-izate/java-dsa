@@ -1,4 +1,4 @@
-package numbers;
+package bitwise;
 
 // swapping without a temporary variable
 

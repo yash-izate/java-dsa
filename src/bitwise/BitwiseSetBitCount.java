@@ -1,4 +1,4 @@
-package numbers;
+package bitwise;
 
 public class BitwiseSetBitCount {
     public static void main(String[] args) {

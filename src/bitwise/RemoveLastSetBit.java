@@ -1,6 +1,6 @@
-package numbers;
+package bitwise;
 
-public class BitwiseRmvLastSetBit {
+public class RemoveLastSetBit {
     public static void main(String[] args) {
         int n = 12;
 

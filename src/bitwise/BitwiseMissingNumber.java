@@ -1,4 +1,4 @@
-package numbers;
+package bitwise;
 
 // "Given an array containing numbers from 1 to N, with exactly one number missing and no duplicates, find the
 // missing number using XOR."
