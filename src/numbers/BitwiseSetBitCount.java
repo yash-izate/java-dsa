@@ -1,6 +1,6 @@
 package numbers;
 
-public class SetBitCount {
+public class BitwiseSetBitCount {
     public static void main(String[] args) {
         int n = 13;
         int temp = n;
