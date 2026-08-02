@@ -40,6 +40,17 @@ public class ArrayBasics {
         return max;
     }
 
+    static int findMin(int[] arr) {
+
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
     public static void main(String[] args) {
         int[] arr1 = {1, 3, 4, 6, 9};
         getAverage(arr1);
@@ -47,10 +58,11 @@ public class ArrayBasics {
         int n = 10;
         multiplyByNumber(arr1, n);
 
-        int[] arr2 = {1, 3, 4, 6, 9};
+        int[] arr2 = {1, 3, -4, 6, 9};
         int target = 3;
         System.out.println(findTarget(arr2, target));
 
-        System.out.println(findMax(arr1));
+        System.out.println(findMax(arr2));
+        System.out.println(findMin(arr2));
     }
 }
