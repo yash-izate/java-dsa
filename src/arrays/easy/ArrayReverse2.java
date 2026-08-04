@@ -2,7 +2,7 @@ package arrays.easy;
 
 import java.util.Arrays;
 
-public class ReverseArray {
+public class ArrayReverse2 {
 
     // using while loop
     public static void reverse_While(int[] arr) {
