@@ -32,13 +32,15 @@ public class SortZeroOne {
             if (arr[j] == 1) {
                 j--;
             }
-            if (i < j && (arr[i] == 1 || arr[j] == 0)) {
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+            if (i < j) {
+                if (arr[i] == 1 || arr[j] == 0) {
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
 
-                i++;
-                j--;
+                    i++;
+                    j--;
+                }
             }
         }
         System.out.println(Arrays.toString(arr));
