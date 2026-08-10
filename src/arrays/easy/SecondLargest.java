@@ -1,3 +1,5 @@
+package arrays.easy;
+
 class SecondLargest {
 
     static void secondLargest(int[] arr) {
