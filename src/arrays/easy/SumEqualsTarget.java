@@ -1,5 +1,7 @@
 package arrays.easy;
 
+import java.util.*;
+
 public class SumEqualsTarget {
     static int[] twoSum(int[] arr, int target) {
         int n = arr.length;
@@ -52,6 +54,33 @@ public class SumEqualsTarget {
         return ans;
     }
 
+    static List<List<Integer>> usingDsa(int[] arr, int target) {
+
+        Set<List<Integer>> result = new HashSet<>();
+
+        int n = arr.length;
+
+        for (int i = 0; i < n - 2; i++) {
+            for (int j = i + 1; j < n - 1; j++) {
+                for (int k = j + 1; k < n; k++) {
+
+                    if ((arr[i] + arr[j] + arr[k]) == target) {
+                        List<Integer> temp = new ArrayList<>();
+                        temp.add(i);
+                        temp.add(j);
+                        temp.add(k);
+
+                        Collections.sort(temp);
+                        result.add(temp);
+                    }
+                }
+            }
+
+        }
+        System.out.println(result);
+        return new ArrayList<>(result);
+    }
+
     public static void main(String[] args) {
         int[] arr1 = {7, 8, 9, 4, 5, 2};
         int[] arr2 = {2, 9, 7, 3, 1};
@@ -64,6 +93,9 @@ public class SumEqualsTarget {
         // three sum using brute force
         int[] result = threeSum(arr2, target);
         System.out.println("Idx number: " + result[0] + " " + result[1] + " " + result[2]);
+
+        // using data structures
+        usingDsa(arr2, target);
 
 
     }

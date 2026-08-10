@@ -1,4 +1,4 @@
-package arrays.easy;
+package arrays.medium;
 
 public class SecondSmallest {
 
@@ -33,7 +33,7 @@ public class SecondSmallest {
     public static void main(String[] args) {
         int[] arr = {3, 1, 7, 5, 6, 4};
 //        int[] arr = {};
-        
+
         secondSmallest(arr);
     }
 

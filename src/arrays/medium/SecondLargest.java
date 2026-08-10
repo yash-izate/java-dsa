@@ -1,4 +1,4 @@
-package arrays.easy;
+package arrays.medium;
 
 class SecondLargest {
 
@@ -18,7 +18,7 @@ class SecondLargest {
                 largest = arr[i];
 
             } else if (arr[i] < largest &&
-                       (secondLargest == null || arr[i] > secondLargest)) {
+                    (secondLargest == null || arr[i] > secondLargest)) {
                 secondLargest = arr[i];
             }
         }
