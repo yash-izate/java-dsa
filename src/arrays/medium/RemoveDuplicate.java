@@ -20,21 +20,22 @@ public class RemoveDuplicate {
         System.out.println(list);
     }
 
-static void remvoveDuplicate(int[] arr) {
-  int i = 0;
-  int j = 1;
-  
-  while (j < arr.length) {
-    if (arr[i] != arr[j]) {
-      arr[i+1] = arr[j];
-      i++;
-    } 
-    j++;
+    static void removeDuplicate(int[] arr) {
+        int i = 0;
+        int j = 1;
 
-  }
+        while (j < arr.length) {
+            if (arr[i] != arr[j]) {
+                arr[i + 1] = arr[j];
+                i++;
+            }
+            j++;
 
-  System.out.println(Arrays.toString(Arrays.copyOf(arr,i +1)));
-}
+        }
+
+        System.out.println(Arrays.toString(Arrays.copyOf(arr, i + 1)));
+    }
+
     public static void main(String[] args) {
 
         int[] arr = {2, 3, 3, 3, 4, 5, 5};
@@ -43,6 +44,6 @@ static void remvoveDuplicate(int[] arr) {
         // usingDSA(arr);
 
         // using two pointer approach
-        remvoveDuplicate(arr);
+        removeDuplicate(arr);
     }
 }
